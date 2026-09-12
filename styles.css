@@ -2262,30 +2262,45 @@ section {
     top: 35%;
     right: 10%;
   }
+  
+  /* Hide "SAME STUDENTS BIGGER POSSIBILITIES" on mobile */
   .top-tag {
-    top: 8%;
-    right: 5%;
-    font-size: 0.7rem;
+    display: none !important;
   }
+  
   .tag-line::after {
-    left: -80px;
-    font-size: 0.7rem;
+    display: none !important;
   }
+  
+  /* Center SRM brand box */
   .hero-brand-box {
-    top: 15%;
-    left: 5%;
-    padding: 10px 20px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 25px;
   }
+  
   .brand-srm {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    text-align: center;
   }
+  
+  /* Center INNOVATEX text */
   .hero-main-type {
-    top: 25%;
-    left: 5%;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 90%;
+    width: 100%;
   }
+  
   .massive-innovatex {
-    font-size: clamp(3rem, 10vw, 7rem);
+    font-size: clamp(3.5rem, 12vw, 8rem);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
   }
   .subtitle-banner {
     padding: 10px 20px;
@@ -2297,25 +2312,25 @@ section {
   .arrow-svg {
     width: 35px;
   }
+  
+  /* Hide or minimize year badge on mobile for cleaner look */
   .year-badge-modern {
-    top: 33%;
-    right: 8%;
-    font-size: 4rem;
-    padding: 8px 20px;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    padding: 6px 15px;
   }
+  
+  /* Hide person visual on mobile for cleaner centered design */
   .person-visual {
-    top: 45%;
-    right: 0;
-    width: 70%;
-    height: 50%;
+    display: none;
   }
+  
   .stats-panel {
-    bottom: 25%;
-    left: 5%;
-    flex-direction: column;
-    gap: 12px;
-    padding: 15px 20px;
+    display: none;
   }
+  
   .stat-number {
     font-size: 2rem;
   }
@@ -2323,46 +2338,49 @@ section {
     width: 60px;
     height: 2px;
   }
+  
+  /* Hide ideas badge on mobile */
   .ideas-badge {
-    top: 40%;
-    right: 5%;
-    padding: 10px 15px;
+    display: none;
   }
+  
   .ideas-text {
     font-size: 0.7rem;
   }
+  
+  /* Hide bottom left text on mobile */
   .bottom-left-text {
-    bottom: 12%;
-    left: 3%;
+    display: none;
   }
+  
   .small-text {
     font-size: 0.6rem;
   }
   .event-info-compact {
-    bottom: 8%;
-    left: 5%;
-    right: 5%;
-    transform: none;
-    flex-direction: column;
-    gap: 8px;
-    padding: 10px 15px;
+    display: none;
   }
   .info-row {
     font-size: 0.65rem;
   }
+  
+  /* Center CTA buttons at bottom */
   .hero-ctas {
-    bottom: 2%;
-    right: 5%;
-    left: 5%;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
+    width: 90%;
   }
+  
   .cta-primary-modern,
   .cta-secondary-modern {
-    padding: 12px 20px;
-    font-size: 0.85rem;
+    padding: 14px 25px;
+    font-size: 0.9rem;
     flex: 1;
+    text-align: center;
+  }
   }
   /* Graphic Elements */
   .crosshair {
