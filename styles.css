@@ -3764,8 +3764,8 @@ section {
    CREW SECTION
    ============================================================ */
 .crew-section {
-  background: var(--black);
-  color: var(--white);
+  background: var(--yellow);
+  color: var(--black);
   padding: 90px 0;
   position: relative;
   overflow: hidden;
@@ -3775,25 +3775,27 @@ section {
   content: '';
   position: absolute;
   top: 15%;
-  left: 5%;
-  width: 200px;
-  height: 200px;
-  background: var(--yellow);
-  opacity: 0.08;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  right: 8%;
+  width: 250px;
+  height: 250px;
+  background: var(--red);
+  opacity: 0.12;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   z-index: 0;
-  transform: rotate(20deg);
+  transform: rotate(-20deg);
 }
 
 .crew-section::after {
   content: '';
   position: absolute;
-  inset: 0;
-  background-image: radial-gradient(rgba(255,255,255,0.05) 1.5px, transparent 1.5px);
-  background-size: 20px 20px;
-  opacity: 0.5;
-  pointer-events: none;
+  bottom: 10%;
+  left: 5%;
+  width: 200px;
+  height: 200px;
+  border: 8px solid var(--black);
+  opacity: 0.08;
   z-index: 0;
+  transform: rotate(15deg);
 }
 
 .crew-grid {
@@ -3805,29 +3807,19 @@ section {
 }
 
 .crew-card {
-  background: var(--darkgray);
-  border: 4px solid var(--white);
+  background: var(--white);
+  border: 4px solid var(--black);
   padding: 30px 24px;
   text-align: center;
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 6px 6px 0 var(--red);
+  box-shadow: 6px 6px 0 var(--black);
   position: relative;
 }
 
 .crew-card:hover {
   transform: translate(-4px, -4px);
-  box-shadow: 10px 10px 0 var(--red);
+  box-shadow: 10px 10px 0 var(--black);
 }
-
-.crew-card:nth-child(1) { box-shadow: 6px 6px 0 var(--red); }
-.crew-card:nth-child(2) { box-shadow: 6px 6px 0 var(--yellow); }
-.crew-card:nth-child(3) { box-shadow: 6px 6px 0 var(--blue); }
-.crew-card:nth-child(4) { box-shadow: 6px 6px 0 var(--green); }
-
-.crew-card:nth-child(1):hover { box-shadow: 10px 10px 0 var(--red); }
-.crew-card:nth-child(2):hover { box-shadow: 10px 10px 0 var(--yellow); }
-.crew-card:nth-child(3):hover { box-shadow: 10px 10px 0 var(--blue); }
-.crew-card:nth-child(4):hover { box-shadow: 10px 10px 0 var(--green); }
 
 .crew-avatar {
   width: 100px;
@@ -3835,12 +3827,16 @@ section {
   margin: 0 auto 20px;
   border-radius: 50%;
   overflow: hidden;
-  border: 4px solid var(--white);
-  background: var(--black);
+  border: 4px solid var(--black);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.crew-card:nth-child(1) .crew-avatar { background: var(--red); }
+.crew-card:nth-child(2) .crew-avatar { background: var(--blue); }
+.crew-card:nth-child(3) .crew-avatar { background: var(--purple); }
+.crew-card:nth-child(4) .crew-avatar { background: var(--green); }
 
 .avatar-placeholder {
   font-family: var(--display);
@@ -3853,18 +3849,35 @@ section {
   font-family: var(--display);
   font-size: 1.4rem;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 8px;
   line-height: 1.2;
 }
 
 .crew-role {
   font-size: 0.9rem;
-  color: rgba(255,255,255,0.75);
+  color: var(--black);
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   line-height: 1.4;
+  opacity: 0.75;
+}
+
+.crew-grid::before {
+  content: 'TEAM';
+  position: absolute;
+  top: -30px;
+  left: 10%;
+  font-family: var(--display);
+  font-size: 1.2rem;
+  color: var(--white);
+  background: var(--black);
+  padding: 8px 22px;
+  border: 3px solid var(--black);
+  transform: rotate(-6deg);
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+  z-index: 10;
 }
 
 /* Responsive crew section */
