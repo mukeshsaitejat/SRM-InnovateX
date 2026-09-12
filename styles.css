@@ -268,45 +268,47 @@ body::before {
   transform: rotate(90deg);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .nav-links {
-    position: fixed;
-    inset: 0 0 0 auto;
-    width: min(85vw, 360px);
-    height: 100vh;
-    background: var(--black);
-    border-left: 4px solid var(--red);
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 100px 32px 32px;
-    gap: 32px;
-    transform: translateX(100%);
-    transition: transform 0.4s ease;
+    position: fixed !important;
+    inset: 0 0 0 auto !important;
+    width: min(85vw, 360px) !important;
+    height: 100vh !important;
+    background: var(--black) !important;
+    border-left: 4px solid var(--red) !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 100px 32px 32px !important;
+    gap: 32px !important;
+    transform: translateX(100%) !important;
+    transition: transform 0.4s ease !important;
+    z-index: 999 !important;
   }
   
   .nav-links.open {
-    transform: translateX(0);
+    transform: translateX(0) !important;
   }
   
   .nav-links a {
-    font-size: 1.5rem;
+    font-size: 2rem !important;
+    width: 100%;
   }
   
   .nav-cta .btn-register-nav {
-    display: none;
+    display: none !important;
   }
   
   .nav-burger {
-    display: block;
+    display: block !important;
   }
   
   .nav-close-wrapper {
-    display: block;
+    display: block !important;
     list-style: none;
   }
   
   .nav-close {
-    display: flex;
+    display: flex !important;
   }
 }
 
