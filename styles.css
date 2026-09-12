@@ -3076,70 +3076,70 @@ section {
 /* Ensure text is readable on small screens */
 @media (max-width: 768px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
   
   /* Navigation improvements */
   .nav-inner {
-    padding: 10px 16px;
+    padding: 12px 18px;
   }
   
   .nav-logo {
-    height: 55px;
+    height: 60px;
   }
   
   .nav-links a {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
   /* Hero text sizes */
   .massive-innovatex {
-    font-size: clamp(3.5rem, 14vw, 8rem);
+    font-size: clamp(4.5rem, 16vw, 10rem);
   }
   
   /* Hero X image adjustment */
   .innovate-x-image {
-    height: 1.4em;
+    height: 1.5em;
     margin-left: -0.2em;
   }
   
   .brand-srm {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
   
   .year-badge-modern {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
   
   /* Stats panel */
   .stat-number {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
   }
   
   .stat-label {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
   
   /* Hero CTAs */
   .cta-primary-modern,
   .cta-secondary-modern {
-    padding: 14px 24px;
-    font-size: 1rem;
+    padding: 16px 28px;
+    font-size: 1.2rem;
   }
   
   /* Top tag text */
   .top-tag {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
   
   /* Ideas badge */
   .ideas-text {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
   
   /* Bottom left text */
   .small-text {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
   
   /* Section padding reduction */
@@ -3152,229 +3152,230 @@ section {
   .register-section,
   .details-section,
   .faq-section {
-    padding: 60px 0;
+    padding: 70px 0;
   }
   
   /* Section titles */
   .section-title-large {
-    font-size: clamp(2.8rem, 10vw, 4rem);
+    font-size: clamp(3.5rem, 12vw, 5rem);
     line-height: 1.1;
   }
   
   .section-hint {
-    font-size: 0.85rem;
-    margin-top: 14px;
+    font-size: 1rem;
+    margin-top: 16px;
   }
   
   .section-number {
-    font-size: 1rem;
-    padding: 4px 14px;
+    font-size: 1.2rem;
+    padding: 6px 18px;
   }
   
   /* About section */
   .about-lead {
-    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
   }
   
   .about-sub {
-    font-size: 1.1rem;
-    line-height: 1.7;
+    font-size: 1.3rem;
+    line-height: 1.8;
   }
   
   .stat-block-num {
-    font-size: clamp(2.2rem, 5vw, 3rem);
+    font-size: clamp(2.8rem, 6vw, 3.6rem);
   }
   
   .stat-block-label {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   
   /* Build section timeline */
   .build-title {
-    font-size: clamp(2.8rem, 9vw, 4.5rem);
+    font-size: clamp(3.5rem, 11vw, 5.5rem);
   }
   
   .build-intro {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
   }
   
   .timeline-stage {
     min-width: 75vw;
-    padding: 22px 20px;
+    padding: 26px 24px;
   }
   
   .stage-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   
   .stage-desc {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   
   .stage-badge {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
   
   /* Track cards */
   .track-header {
-    padding: 16px;
+    padding: 20px;
   }
   
   .track-num {
-    font-size: 1.5rem;
-    padding: 4px 10px;
+    font-size: 1.8rem;
+    padding: 6px 12px;
   }
   
   .track-name {
-    font-size: 1.15rem;
+    font-size: 1.4rem;
   }
   
   .track-expand p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   
   /* Evaluation cards */
   .eval-card {
-    padding: 24px 20px;
+    padding: 28px 24px;
   }
   
   .eval-when {
-    font-size: 1.2rem;
-  }
-  
-  .eval-title {
     font-size: 1.4rem;
   }
   
+  .eval-title {
+    font-size: 1.7rem;
+  }
+  
   .eval-list li {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
   }
   
   .eval-note {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
+    padding: 18px 22px;
   }
   
   /* Opportunities tags */
   .opp-tag {
-    font-size: 0.9rem;
-    padding: 12px 18px;
-    box-shadow: 4px 4px 0 var(--red);
+    font-size: 1.1rem;
+    padding: 14px 22px;
+    box-shadow: 5px 5px 0 var(--red);
   }
   
   /* Prize section */
   .prize-giant {
-    font-size: clamp(4rem, 20vw, 7rem);
+    font-size: clamp(5rem, 24vw, 8rem);
   }
   
   .prize-label {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
   
   .prize-rank {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   
   .prize-amount {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
   }
   
   /* Registration cards */
   .reg-card {
-    padding: 24px 20px;
+    padding: 28px 24px;
   }
   
   .reg-size {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   
   .reg-price {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
   
   .reg-sub {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
   
   .reg-summary {
-    padding: 20px 18px;
+    padding: 24px 22px;
   }
   
   .reg-summary-text {
-    font-size: 1.05rem;
+    font-size: 1.3rem;
   }
   
   .btn-primary {
-    font-size: 1rem;
-    padding: 16px 32px;
+    font-size: 1.2rem;
+    padding: 18px 36px;
   }
   
   /* Details grid */
   .detail-label {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
   
   .detail-value {
-    font-size: 1.15rem;
-    line-height: 1.4;
+    font-size: 1.4rem;
+    line-height: 1.5;
   }
   
   .details-note {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
   
   /* FAQ */
   .faq-question {
-    padding: 16px 18px;
-    font-size: 1rem;
+    padding: 20px 22px;
+    font-size: 1.2rem;
   }
   
   .faq-answer-inner {
-    padding: 16px 18px;
-    font-size: 0.98rem;
-    line-height: 1.7;
+    padding: 20px 22px;
+    font-size: 1.15rem;
+    line-height: 1.8;
   }
   
   .faq-icon {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
   /* Final CTA */
   .cta-title {
-    font-size: clamp(2.5rem, 10vw, 3.5rem);
+    font-size: clamp(3rem, 12vw, 4.5rem);
   }
   
   .cta-subtitle {
-    font-size: 1.05rem;
+    font-size: 1.3rem;
   }
   
   .btn-cta-final {
-    font-size: 1rem;
-    padding: 18px 32px;
+    font-size: 1.2rem;
+    padding: 20px 36px;
   }
   
   .cta-badge {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
   
   /* Footer */
   .footer-logo-img {
-    height: 75px;
+    height: 80px;
   }
   
   .footer-tagline {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
   
   .footer-heading {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   
   .footer-links a {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
   
   .footer-bottom {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
   
   /* Sticker badges mobile adjustment */
@@ -3384,14 +3385,14 @@ section {
   .details-grid::before,
   .faq-list::before,
   .cta-content::before {
-    font-size: 1rem;
-    padding: 8px 16px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
     border-width: 3px;
   }
   
   /* Marquee text */
   .marquee-track {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 }
 
