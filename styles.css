@@ -2238,9 +2238,10 @@ section {
 }
 
 @media (max-width: 768px) {
-  /* Hero Major Adjustments */
+  /* Hero Major Adjustments - Reduced height */
   .hero-modern-collage {
-    min-height: 100vh;
+    min-height: 70vh;
+    padding-bottom: 40px;
   }
   
   /* Hide quote elements on mobile */
@@ -2250,6 +2251,19 @@ section {
   
   .bottom-left-text {
     display: none !important;
+  }
+  
+  /* Marquee adjustments - prevent overlap */
+  .divider-marquee {
+    padding: 15px 0;
+    position: relative;
+    z-index: 100;
+    margin-top: -1px;
+  }
+  
+  .marquee-track {
+    font-size: 0.85rem;
+    gap: 30px;
   }
   
   .geo-yellow {
