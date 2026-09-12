@@ -448,6 +448,7 @@ body::before {
   letter-spacing: 0.15em;
   line-height: 1.4;
   color: var(--black);
+  display: none !important;
 }
 
 .tag-line {
@@ -682,6 +683,7 @@ body::before {
   bottom: 15%;
   left: clamp(3%, 4vw, 5%);
   z-index: 6;
+  display: none !important;
 }
 
 .small-text {
