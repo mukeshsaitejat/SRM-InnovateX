@@ -2240,6 +2240,16 @@ section {
   .hero-modern-collage {
     min-height: 100vh;
   }
+  
+  /* Hide quote elements on mobile */
+  .top-tag {
+    display: none !important;
+  }
+  
+  .bottom-left-text {
+    display: none !important;
+  }
+  
   .geo-yellow {
     width: 60%;
     height: 50%;
@@ -2262,11 +2272,6 @@ section {
     height: 100px;
     top: 35%;
     right: 10%;
-  }
-  .top-tag {
-    top: 5%;
-    right: 3%;
-    font-size: 0.85rem;
   }
   .tag-line::after {
     left: -90px;
