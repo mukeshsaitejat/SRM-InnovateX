@@ -321,11 +321,31 @@ body::before {
   background: linear-gradient(155deg, #F2E6C9 0%, #EEDDBA 45%, #E6D2A8 100%);
 }
 
-.hero-modern-collage {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
+@media (max-width: 768px) {
+
+  .hero-modern-collage {
+    min-height: 100vh !important;
+    padding-bottom: 0 !important;
+    overflow: visible !important;
+  }
+
+  .hero-ctas {
+    position: absolute !important;
+    top: 78% !important;
+    bottom: auto !important;
+    left: 8% !important;
+    right: 8% !important;
+    width: auto !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    z-index: 50 !important;
+  }
+
+  .cta-primary-modern,
+  .cta-secondary-modern {
+    width: 100% !important;
+    justify-content: center !important;
+  }
 }
 
 /* Geometric Background Shapes */
@@ -826,28 +846,34 @@ body::before {
   background: var(--red);
   color: var(--white);
   overflow: hidden;
-  padding: 20px 0;
+  padding: 15px 0;
   border-top: 2px solid var(--black);
   border-bottom: 2px solid var(--black);
 }
 
 .marquee-track {
-  display: inline-flex;
-  gap: 60px;
-  animation: marquee 20s linear infinite;
+  display: flex;
+  width: max-content;
+  animation: marquee 8s linear infinite;
   font-family: var(--display);
   font-size: 1.3rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
   font-weight: 900;
+  text-transform: uppercase;
   white-space: nowrap;
+  will-change: transform;
+}
+
+.marquee-track span {
+  flex-shrink: 0;
+  padding-right: 80px;
 }
 
 @keyframes marquee {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
+
+  to {
     transform: translateX(-50%);
   }
 }
@@ -2374,17 +2400,23 @@ section {
   }
   
   /* Move buttons to bottom-right cream area */
+@media (max-width: 768px) {
+  .hero {
+    position: relative;
+    min-height: 100vh;
+  }
+
   .hero-ctas {
-    bottom: 15% !important;
+    position: absolute;
+    bottom: 5% !important;
     top: auto !important;
-    right: 5%;
-    left: auto;
-    width: 60%;
+    left: 8%;
+    right: 8%;
+    width: auto;
     flex-direction: column;
-    justify-content: center;
     gap: 12px;
   }
-  
+}
   .cta-primary-modern,
   .cta-secondary-modern {
     padding: 14px 24px;
@@ -3788,3 +3820,32 @@ section {
 
 
 
+/* FINAL MOBILE HERO CTA POSITION */
+@media (max-width: 768px) {
+  .hero-ctas {
+    position: absolute !important;
+
+    top: 78% !important;
+    bottom: auto !important;
+
+    left: 8% !important;
+    right: 8% !important;
+    width: auto !important;
+
+    flex-direction: column !important;
+    gap: 12px !important;
+    z-index: 50 !important;
+  }
+
+  .cta-primary-modern,
+  .cta-secondary-modern {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}/* FINAL MOBILE FIX — Align 2026 with green shape */
+@media (max-width: 768px) {
+  .year-badge-modern {
+    top: 41% !important;
+    right: 7% !important;
+  }
+}
