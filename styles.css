@@ -2263,13 +2263,13 @@ section {
     right: 10%;
   }
   .top-tag {
-    top: 8%;
-    right: 5%;
-    font-size: 0.7rem;
+    top: 5%;
+    right: 3%;
+    font-size: 0.85rem;
   }
   .tag-line::after {
-    left: -80px;
-    font-size: 0.7rem;
+    left: -90px;
+    font-size: 0.75rem;
   }
   .hero-brand-box {
     top: 15%;
