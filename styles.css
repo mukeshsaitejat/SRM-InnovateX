@@ -2375,7 +2375,7 @@ section {
   
   /* Move buttons down */
   .hero-ctas {
-    bottom: 5% !important;
+    bottom: 2% !important;
     top: auto !important;
     right: 5%;
     left: 5%;
