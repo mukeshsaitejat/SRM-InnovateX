@@ -440,10 +440,10 @@ body::before {
 .top-tag {
   position: absolute;
   top: 10%;
-  right: 10%;
+  right: clamp(3%, 5vw, 10%);
   text-align: right;
   z-index: 15;
-  font-size: 0.85rem;
+  font-size: clamp(0.65rem, 1.5vw, 0.85rem);
   font-weight: 900;
   letter-spacing: 0.15em;
   line-height: 1.4;
@@ -457,26 +457,27 @@ body::before {
 .tag-line::after {
   content: '. . . . . . . . .';
   position: absolute;
-  left: -110px;
+  left: clamp(-90px, -10vw, -110px);
   letter-spacing: 0.3em;
   opacity: 0.6;
+  font-size: clamp(0.6rem, 1.3vw, 0.85rem);
 }
 
 /* Brand Box */
 .hero-brand-box {
   position: absolute;
   top: 18%;
-  left: 8%;
+  left: clamp(3%, 5vw, 8%);
   background: var(--red);
-  border: 5px solid var(--black);
-  padding: 15px 30px;
+  border: clamp(3px, 0.5vw, 5px) solid var(--black);
+  padding: clamp(10px, 2vw, 15px) clamp(20px, 3vw, 30px);
   z-index: 10;
   transform: rotate(-3deg);
 }
 
 .brand-srm {
   font-family: var(--display);
-  font-size: clamp(3rem, 7vw, 5rem);
+  font-size: clamp(2.5rem, 6vw, 5rem);
   color: var(--black);
   line-height: 0.9;
 }
@@ -485,19 +486,19 @@ body::before {
 .hero-main-type {
   position: absolute;
   top: 32%;
-  left: 10%;
+  left: clamp(3%, 7vw, 10%);
   z-index: 12;
-  max-width: 70%;
+  max-width: 90%;
 }
 
 .massive-innovatex {
   font-family: var(--display);
-  font-size: clamp(4rem, 12vw, 11rem);
+  font-size: clamp(3rem, 10vw, 11rem);
   line-height: 0.85;
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: -0.02em;
-  text-shadow: 5px 5px 0 var(--black);
+  text-shadow: clamp(3px, 0.5vw, 5px) clamp(3px, 0.5vw, 5px) 0 var(--black);
   margin: 0;
   display: inline-flex;
   align-items: center;
@@ -517,24 +518,24 @@ body::before {
 .subtitle-banner {
   display: inline-flex;
   align-items: center;
-  gap: 15px;
+  gap: clamp(10px, 2vw, 15px);
   background: var(--yellow);
-  border: 4px solid var(--black);
-  padding: 12px 30px;
-  margin-top: 20px;
-  box-shadow: 6px 6px 0 var(--black);
+  border: clamp(3px, 0.4vw, 4px) solid var(--black);
+  padding: clamp(8px, 1.5vw, 12px) clamp(20px, 3vw, 30px);
+  margin-top: clamp(15px, 2vw, 20px);
+  box-shadow: clamp(4px, 0.6vw, 6px) clamp(4px, 0.6vw, 6px) 0 var(--black);
 }
 
 .subtitle-text {
   font-weight: 900;
-  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  font-size: clamp(0.75rem, 1.8vw, 1.1rem);
   letter-spacing: 0.12em;
   color: var(--black);
 }
 
 .arrow-svg {
-  width: 50px;
-  height: 20px;
+  width: clamp(35px, 5vw, 50px);
+  height: clamp(15px, 2vw, 20px);
   stroke: var(--black);
 }
 
@@ -544,15 +545,15 @@ body::before {
   top: 62%;
   right: 28%;
   font-family: var(--display);
-  font-size: clamp(4rem, 8vw, 7rem);
+  font-size: clamp(3rem, 7vw, 7rem);
   color: var(--white);
   background: var(--red);
-  border: 5px solid var(--black);
-  padding: 10px 30px;
+  border: clamp(3px, 0.5vw, 5px) solid var(--black);
+  padding: clamp(8px, 1.2vw, 10px) clamp(20px, 3vw, 30px);
   transform: rotate(-8deg);
   z-index: 14;
   line-height: 1;
-  box-shadow: 6px 6px 0 rgba(0,0,0,0.3);
+  box-shadow: clamp(4px, 0.6vw, 6px) clamp(4px, 0.6vw, 6px) 0 rgba(0,0,0,0.3);
 }
 
 /* Person Visual - Clean & Simple */
@@ -592,15 +593,15 @@ body::before {
 .stats-panel {
   position: absolute;
   bottom: 35% !important;
-  left: 5% !important;
+  left: clamp(3%, 4vw, 5%) !important;
   background: var(--black);
-  border: 4px solid var(--white);
-  padding: 18px 30px;
+  border: clamp(3px, 0.4vw, 4px) solid var(--white);
+  padding: clamp(12px, 2vw, 18px) clamp(20px, 3vw, 30px);
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: clamp(15px, 2vw, 20px);
   z-index: 13;
-  box-shadow: 6px 6px 0 var(--purple);
+  box-shadow: clamp(4px, 0.6vw, 6px) clamp(4px, 0.6vw, 6px) 0 var(--purple);
 }
 
 .stat-item {
@@ -610,13 +611,13 @@ body::before {
 
 .stat-number {
   font-family: var(--display);
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
   line-height: 1;
   margin-bottom: 5px;
 }
 
 .stat-label {
-  font-size: 0.75rem;
+  font-size: clamp(0.65rem, 1vw, 0.75rem);
   font-weight: 900;
   letter-spacing: 0.1em;
   opacity: 0.9;
@@ -624,14 +625,14 @@ body::before {
 
 .stat-divider {
   width: 2px;
-  height: 50px;
+  height: clamp(35px, 5vw, 50px);
   background: var(--white);
   opacity: 0.5;
 }
 
 .circles-icon {
-  width: 60px;
-  height: 30px;
+  width: clamp(45px, 6vw, 60px);
+  height: clamp(22px, 3vw, 30px);
   stroke: var(--white);
   margin-top: 8px;
 }
@@ -658,10 +659,10 @@ body::before {
 .ideas-badge {
   position: absolute;
   top: 50%;
-  right: 8%;
+  right: clamp(3%, 5vw, 8%);
   background: var(--red);
-  border: 3px solid var(--black);
-  padding: 15px 20px;
+  border: clamp(2px, 0.3vw, 3px) solid var(--black);
+  padding: clamp(10px, 1.8vw, 15px) clamp(15px, 2.5vw, 20px);
   z-index: 14;
   transform: rotate(-5deg);
   text-align: center;
@@ -669,7 +670,7 @@ body::before {
 
 .ideas-text {
   font-weight: 900;
-  font-size: 0.8rem;
+  font-size: clamp(0.65rem, 1.1vw, 0.8rem);
   letter-spacing: 0.08em;
   line-height: 1.4;
   color: var(--white);
@@ -679,12 +680,12 @@ body::before {
 .bottom-left-text {
   position: absolute;
   bottom: 15%;
-  left: 5%;
+  left: clamp(3%, 4vw, 5%);
   z-index: 6;
 }
 
 .small-text {
-  font-size: 0.7rem;
+  font-size: clamp(0.6rem, 1vw, 0.7rem);
   font-weight: 700;
   letter-spacing: 0.08em;
   line-height: 1.5;
@@ -698,25 +699,25 @@ body::before {
   left: 33% !important;
   transform: none;
   display: flex;
-  gap: 25px;
+  gap: clamp(15px, 2.5vw, 25px);
   z-index: 10;
   background: rgba(255,255,255,0.95);
-  padding: 10px 28px;
-  border: 3px solid var(--black);
+  padding: clamp(8px, 1.2vw, 10px) clamp(20px, 3vw, 28px);
+  border: clamp(2px, 0.3vw, 3px) solid var(--black);
 }
 
 .info-row {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 0.75rem;
+  gap: clamp(6px, 1vw, 8px);
+  font-size: clamp(0.65rem, 1vw, 0.75rem);
   font-weight: 900;
   letter-spacing: 0.05em;
   color: var(--black);
 }
 
 .info-icon {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
 }
 
 /* CTA Buttons */
@@ -725,12 +726,12 @@ body::before {
 .cta-secondary-modern {
   display: inline-flex;
   align-items: center;
-  padding: 16px 32px;
+  padding: clamp(12px, 2vw, 16px) clamp(24px, 3.5vw, 32px);
   font-weight: 900;
-  font-size: 1rem;
+  font-size: clamp(0.85rem, 1.3vw, 1rem);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  border: 4px solid var(--black);
+  border: clamp(3px, 0.4vw, 4px) solid var(--black);
   transition: all 0.3s ease;
   text-decoration: none;
   white-space: nowrap;
@@ -739,12 +740,12 @@ body::before {
 .cta-primary-modern {
   background: var(--red);
   color: var(--white);
-  box-shadow: 6px 6px 0 var(--black);
+  box-shadow: clamp(4px, 0.6vw, 6px) clamp(4px, 0.6vw, 6px) 0 var(--black);
 }
 
 .cta-primary-modern:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 9px 9px 0 var(--black);
+  box-shadow: clamp(6px, 0.9vw, 9px) clamp(6px, 0.9vw, 9px) 0 var(--black);
 }
 
 .cta-secondary-modern {
