@@ -2320,16 +2320,21 @@ section {
     width: 35px;
   }
   .year-badge-modern {
-    top: 33%;
-    right: 8%;
-    font-size: 4rem;
+    top: 25%;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%) rotate(-8deg);
+    font-size: 3.5rem;
     padding: 8px 20px;
+    z-index: 5 !important;
   }
+  
   .person-visual {
-    top: 45%;
-    right: 0;
-    width: 70%;
-    height: 50%;
+    top: 35%;
+    right: -5%;
+    width: 85%;
+    height: 60%;
+    z-index: 10 !important;
   }
   .stats-panel {
     bottom: 25%;
@@ -2373,21 +2378,22 @@ section {
     font-size: 0.65rem;
   }
   
-  /* Move buttons up to fill empty space */
+  /* Move buttons to bottom in empty space */
   .hero-ctas {
-    bottom: auto !important;
-    top: 55% !important;
+    bottom: 8% !important;
+    top: auto !important;
     right: 5%;
     left: 5%;
     flex-direction: column;
     justify-content: center;
     gap: 12px;
+    z-index: 20 !important;
   }
   
   .cta-primary-modern,
   .cta-secondary-modern {
-    padding: 14px 24px;
-    font-size: 0.9rem;
+    padding: 16px 24px;
+    font-size: 0.95rem;
     width: 100%;
   }
   /* Graphic Elements */
