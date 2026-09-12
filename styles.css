@@ -3076,7 +3076,7 @@ section {
 /* Ensure text is readable on small screens */
 @media (max-width: 768px) {
   body {
-    font-size: 15px;
+    font-size: 16px;
   }
   
   /* Navigation improvements */
@@ -3085,13 +3085,61 @@ section {
   }
   
   .nav-logo {
-    height: 50px;
+    height: 55px;
+  }
+  
+  .nav-links a {
+    font-size: 1.8rem;
+  }
+  
+  /* Hero text sizes */
+  .massive-innovatex {
+    font-size: clamp(3.5rem, 14vw, 8rem);
   }
   
   /* Hero X image adjustment */
   .innovate-x-image {
-    height: 1.2em;
+    height: 1.4em;
     margin-left: -0.2em;
+  }
+  
+  .brand-srm {
+    font-size: 3.5rem;
+  }
+  
+  .year-badge-modern {
+    font-size: 3.5rem;
+  }
+  
+  /* Stats panel */
+  .stat-number {
+    font-size: 2.2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  /* Hero CTAs */
+  .cta-primary-modern,
+  .cta-secondary-modern {
+    padding: 14px 24px;
+    font-size: 1rem;
+  }
+  
+  /* Top tag text */
+  .top-tag {
+    font-size: 0.85rem;
+  }
+  
+  /* Ideas badge */
+  .ideas-text {
+    font-size: 0.8rem;
+  }
+  
+  /* Bottom left text */
+  .small-text {
+    font-size: 0.75rem;
   }
   
   /* Section padding reduction */
@@ -3104,168 +3152,229 @@ section {
   .register-section,
   .details-section,
   .faq-section {
-    padding: 50px 0;
+    padding: 60px 0;
   }
   
   /* Section titles */
   .section-title-large {
-    font-size: clamp(2rem, 8vw, 2.8rem);
-    line-height: 1;
+    font-size: clamp(2.8rem, 10vw, 4rem);
+    line-height: 1.1;
   }
   
   .section-hint {
-    font-size: 0.75rem;
-    margin-top: 12px;
+    font-size: 0.85rem;
+    margin-top: 14px;
   }
   
   .section-number {
-    font-size: 0.9rem;
-    padding: 3px 12px;
+    font-size: 1rem;
+    padding: 4px 14px;
+  }
+  
+  /* About section */
+  .about-lead {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+  }
+  
+  .about-sub {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  
+  .stat-block-num {
+    font-size: clamp(2.2rem, 5vw, 3rem);
+  }
+  
+  .stat-block-label {
+    font-size: 0.8rem;
   }
   
   /* Build section timeline */
   .build-title {
-    font-size: clamp(2.2rem, 7vw, 3.5rem);
+    font-size: clamp(2.8rem, 9vw, 4.5rem);
+  }
+  
+  .build-intro {
+    font-size: 1.15rem;
   }
   
   .timeline-stage {
     min-width: 75vw;
+    padding: 22px 20px;
+  }
+  
+  .stage-title {
+    font-size: 1.5rem;
+  }
+  
+  .stage-desc {
+    font-size: 1rem;
+  }
+  
+  .stage-badge {
+    font-size: 0.8rem;
   }
   
   /* Track cards */
   .track-header {
-    padding: 14px;
+    padding: 16px;
   }
   
   .track-num {
-    font-size: 1.3rem;
-    padding: 3px 8px;
+    font-size: 1.5rem;
+    padding: 4px 10px;
   }
   
   .track-name {
+    font-size: 1.15rem;
+  }
+  
+  .track-expand p {
     font-size: 1rem;
   }
   
   /* Evaluation cards */
   .eval-card {
-    padding: 20px 18px;
+    padding: 24px 20px;
   }
   
-  .eval-title {
+  .eval-when {
     font-size: 1.2rem;
   }
   
+  .eval-title {
+    font-size: 1.4rem;
+  }
+  
   .eval-list li {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
+  }
+  
+  .eval-note {
+    font-size: 0.95rem;
   }
   
   /* Opportunities tags */
   .opp-tag {
-    font-size: 0.8rem;
-    padding: 10px 16px;
+    font-size: 0.9rem;
+    padding: 12px 18px;
     box-shadow: 4px 4px 0 var(--red);
   }
   
   /* Prize section */
   .prize-giant {
-    font-size: clamp(3rem, 16vw, 5rem);
+    font-size: clamp(4rem, 20vw, 7rem);
   }
   
   .prize-label {
-    font-size: 0.9rem;
-  }
-  
-  .prize-amount {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
   
   .prize-rank {
-    font-size: 0.85rem;
+    font-size: 1rem;
+  }
+  
+  .prize-amount {
+    font-size: 2.2rem;
   }
   
   /* Registration cards */
   .reg-card {
-    padding: 20px 16px;
+    padding: 24px 20px;
   }
   
   .reg-size {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   
   .reg-price {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
   
   .reg-sub {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
   
   .reg-summary {
-    padding: 20px 16px;
+    padding: 20px 18px;
   }
   
   .reg-summary-text {
-    font-size: 0.9rem;
+    font-size: 1.05rem;
+  }
+  
+  .btn-primary {
+    font-size: 1rem;
+    padding: 16px 32px;
   }
   
   /* Details grid */
   .detail-label {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
   
   .detail-value {
-    font-size: 1rem;
+    font-size: 1.15rem;
+    line-height: 1.4;
+  }
+  
+  .details-note {
+    font-size: 0.85rem;
   }
   
   /* FAQ */
   .faq-question {
-    padding: 14px 16px;
-    font-size: 0.9rem;
+    padding: 16px 18px;
+    font-size: 1rem;
   }
   
   .faq-answer-inner {
-    padding: 14px 16px;
-    font-size: 0.88rem;
-    line-height: 1.6;
+    padding: 16px 18px;
+    font-size: 0.98rem;
+    line-height: 1.7;
   }
   
   .faq-icon {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   
   /* Final CTA */
   .cta-title {
-    font-size: clamp(2rem, 8vw, 3rem);
+    font-size: clamp(2.5rem, 10vw, 3.5rem);
   }
   
   .cta-subtitle {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
   }
   
   .btn-cta-final {
-    font-size: 0.9rem;
-    padding: 16px 28px;
+    font-size: 1rem;
+    padding: 18px 32px;
+  }
+  
+  .cta-badge {
+    font-size: 0.85rem;
   }
   
   /* Footer */
   .footer-logo-img {
-    height: 70px;
+    height: 75px;
   }
   
   .footer-tagline {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
   
   .footer-heading {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   
   .footer-links a {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
   
   .footer-bottom {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
   
   /* Sticker badges mobile adjustment */
@@ -3275,71 +3384,80 @@ section {
   .details-grid::before,
   .faq-list::before,
   .cta-content::before {
-    font-size: 0.85rem;
-    padding: 6px 12px;
-    border-width: 2px;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-width: 3px;
+  }
+  
+  /* Marquee text */
+  .marquee-track {
+    font-size: 1.1rem;
   }
 }
 
 /* Extra small screens - phones in portrait */
 @media (max-width: 480px) {
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
   
   .wrap {
-    padding: 0 12px;
+    padding: 0 14px;
   }
   
   /* Hero adjustments */
   .hero-brand-box {
-    padding: 6px 14px;
+    padding: 8px 16px;
   }
   
   .brand-srm {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
   }
   
   .massive-innovatex {
-    font-size: clamp(1.8rem, 11vw, 3.5rem);
+    font-size: clamp(2.5rem, 13vw, 5rem);
   }
   
   .innovate-x-image {
-    height: 1.15em;
+    height: 1.35em;
   }
   
   .year-badge-modern {
-    font-size: 2.2rem;
-    padding: 5px 14px;
+    font-size: 2.8rem;
+    padding: 6px 16px;
   }
   
   /* Stats panel */
   .stats-panel {
-    padding: 10px 12px;
+    padding: 12px 14px;
   }
   
   .stat-number {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   
   .stat-label {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   
-  /* Ideas badge - hide on very small screens */
+  /* Ideas badge - make visible but smaller */
   .ideas-badge {
-    display: none;
+    padding: 8px 12px;
+  }
+  
+  .ideas-text {
+    font-size: 0.7rem;
   }
   
   /* Hero CTAs */
   .hero-ctas {
-    gap: 8px;
+    gap: 10px;
   }
   
   .cta-primary-modern,
   .cta-secondary-modern {
-    padding: 10px 18px;
-    font-size: 0.75rem;
+    padding: 12px 20px;
+    font-size: 0.9rem;
   }
   
   /* Sections */
@@ -3352,110 +3470,162 @@ section {
   .register-section,
   .details-section,
   .faq-section {
-    padding: 40px 0;
+    padding: 45px 0;
   }
   
   .section-title-large {
-    font-size: clamp(1.8rem, 9vw, 2.4rem);
+    font-size: clamp(2.2rem, 10vw, 3rem);
   }
   
   .section-intro {
-    margin-bottom: 32px;
+    margin-bottom: 36px;
+  }
+  
+  .section-hint {
+    font-size: 0.8rem;
   }
   
   /* About stats - single column */
   .about-stats {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 14px;
   }
   
   .stat-block {
-    padding: 16px 14px;
+    padding: 18px 16px;
   }
   
   .stat-block-num {
-    font-size: clamp(1.6rem, 6vw, 2rem);
+    font-size: clamp(2rem, 7vw, 2.6rem);
+  }
+  
+  .stat-block-label {
+    font-size: 0.75rem;
+  }
+  
+  .about-lead {
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
+  }
+  
+  .about-sub {
+    font-size: 1rem;
   }
   
   /* Build section */
   .build-intro {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   
   .timeline-stage {
     min-width: 85vw;
-    padding: 18px 16px;
+    padding: 20px 18px;
   }
   
   .stage-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   
   .stage-desc {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
   
   /* Track cards */
   .track-image {
-    height: 120px;
+    height: 130px;
+  }
+  
+  .track-num {
+    font-size: 1.4rem;
+  }
+  
+  .track-name {
+    font-size: 1.05rem;
   }
   
   /* Evaluation */
   .eval-note {
-    font-size: 0.82rem;
-    padding: 12px 16px;
+    font-size: 0.9rem;
+    padding: 14px 18px;
+  }
+  
+  .eval-title {
+    font-size: 1.3rem;
+  }
+  
+  .eval-list li {
+    font-size: 0.9rem;
   }
   
   /* Opportunities */
   .opp-tag {
-    font-size: 0.75rem;
-    padding: 8px 14px;
+    font-size: 0.85rem;
+    padding: 10px 16px;
   }
   
   /* Prizes */
   .prize-giant {
-    font-size: clamp(2.5rem, 14vw, 4rem);
+    font-size: clamp(3.5rem, 18vw, 5.5rem);
   }
   
   .prize-panel {
-    padding: 18px 16px;
+    padding: 20px 18px;
+  }
+  
+  .prize-amount {
+    font-size: 2rem;
+  }
+  
+  .prize-rank {
+    font-size: 0.9rem;
   }
   
   /* Registration */
   .reg-size {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   
   .reg-price {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+  }
+  
+  .reg-sub {
+    font-size: 0.8rem;
   }
   
   .btn-primary {
-    padding: 14px 28px;
-    font-size: 0.9rem;
+    padding: 16px 30px;
+    font-size: 0.95rem;
   }
   
   /* Details */
   .detail-item {
-    padding: 14px 12px;
+    padding: 16px 14px;
+  }
+  
+  .detail-value {
+    font-size: 1.05rem;
   }
   
   /* FAQ */
   .faq-question {
-    padding: 12px 14px;
+    padding: 14px 16px;
   }
   
   .faq-q-text {
-    font-size: 0.88rem;
+    font-size: 0.95rem;
+  }
+  
+  .faq-answer-inner {
+    font-size: 0.92rem;
   }
   
   /* Final CTA */
   .cta-title {
-    font-size: clamp(1.8rem, 9vw, 2.5rem);
+    font-size: clamp(2.2rem, 10vw, 3rem);
   }
   
-  .cta-badge {
-    font-size: 0.75rem;
+  .cta-subtitle {
+    font-size: 1rem;
   }
   
   /* Hide some decorative elements on very small screens */
