@@ -2372,19 +2372,23 @@ section {
   .info-row {
     font-size: 0.65rem;
   }
+  
+  /* Move buttons up to fill empty space */
   .hero-ctas {
-    bottom: 2%;
+    bottom: auto !important;
+    top: 55% !important;
     right: 5%;
     left: 5%;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
   }
+  
   .cta-primary-modern,
   .cta-secondary-modern {
-    padding: 12px 20px;
-    font-size: 0.85rem;
-    flex: 1;
+    padding: 14px 24px;
+    font-size: 0.9rem;
+    width: 100%;
   }
   /* Graphic Elements */
   .crosshair {
