@@ -2373,12 +2373,13 @@ section {
     font-size: 0.65rem;
   }
   
-  /* Move buttons down */
+  /* Move buttons to bottom-right cream area */
   .hero-ctas {
-    bottom: 2% !important;
+    bottom: 15% !important;
     top: auto !important;
     right: 5%;
-    left: 5%;
+    left: auto;
+    width: 60%;
     flex-direction: column;
     justify-content: center;
     gap: 12px;
